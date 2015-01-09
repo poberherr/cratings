@@ -1,0 +1,104 @@
+
+
+
+/users/
+-- das sind die user die irgendwas machen duerfen
+
+
+/account/
+- A User has an account
+[DeliveryHero]
+
+/types/
+- A account can have types
+[comment_lieferheld]
+
+
+
+
+
+/review/
+- author
+    - datetime
+    - created_at
+    - modified_at
+- rating
+
+/items/:id/statistics
+{
+    ratings: {
+        deliveryTime: {
+            average: 20,
+            worst: 120
+        }
+    }
+}
+
+/items/:id
+{
+    "id": "456",
+    name: 'Toothpaste',
+    ratings: '/items/456/statistics'
+    reviews: '/items/456/reviews'
+}
+
+/items/:id/reviews
+[
+    {
+        "id": 123,
+        "author": "Herman Whatever",
+        "created_at": 12323423453425,
+        "item": "/items/456",
+        "ratings": {
+            "review": "great shit man",
+            "delivery_time": 120,
+            "delivery_time_satisfaction": 0.7,
+            "food_quality": 0.5
+        }
+    }
+]
+
+/reviews/:id/
+
+{
+    "id": "123"
+    "author": "Herman Whatever",
+    "created_at": 12323423453425,
+    "item": "/items/456",
+    "ratings": {
+        "review": "great shit man",
+        "delivery_time": 120,
+        "delivery_time_satisfaction": 0.7,
+        "food_quality": 0.5
+    }
+}
+
+
+
+
+/comments/
+
+{
+
+
+}
+
+/ratings/
+
+
+
+
+            {
+                "url": "/accounts/1234/",
+                "name": "Example Restaurant",
+                "business_id": 17865,
+                "country": "DE",
+                "company": "lieferheld.de"
+            },
+            {
+                "url": "/accounts/1235/",
+                "name": "Example Bar",
+                "business_id": 17869,
+                "country": "DE",
+                "company": "pizza.de"
+            }
