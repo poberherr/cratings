@@ -61,7 +61,7 @@
 /reviews/:id/
 
 {
-    "id": "123"
+    "id": 123,
     "author": "Herman Whatever",
     "created_at": 12323423453425,
     "item": "/items/456",
