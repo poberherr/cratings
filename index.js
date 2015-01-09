@@ -14,17 +14,17 @@ server.connection(serverConfig);
 // Add the route
 server.route({
     method: 'POST',
-    path:'/reviews/', 
+    path:'/reviews',
     handler: function (request, reply) {
         console.log(request)
         var review = new Review(request.payload)
-        reply(review.toJSON());
+        reply(review.toJSON()).code(201);
     }
 });
 
 server.route({
     method: 'GET',
-    path:'/hello', 
+    path:'/hello',
     handler: function (request, reply) {
         reply('hello world');
     }
