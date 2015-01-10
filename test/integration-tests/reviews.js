@@ -13,7 +13,6 @@ describe('/reviews/', function () {
                 url: 'http://localhost:8889/reviews',
                 method: 'POST',
                 json: {
-                    "id": 123,
                     "author": "Herman Whatever",
                     "created_at": 12323423453425,
                     "item": "/items/456",
